@@ -1,0 +1,30 @@
+
+<p><%=locals%></p>
+<p><%=data.flats[owner]%></p>
+<!-- <p> <%= flat = data.flats[owner] %></p> -->
+
+<div class="banner-flat" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/tokyo');">
+</div>
+
+<div class="header-flat-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+      <div class="header-flat-owner avatar">
+        <img src="https://kitt.lewagon.com/placeholder/users/#{owner}" id="toto" class="image-circle" width = "80">
+
+      </div>
+      <div class="header-flat-name">
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+<p><%= flat.name %></p>
+<h1><%= flat.description %></h1>
+<p><%= flat.city_name %></p>
+<p><%= flat.city_slug %></p>
